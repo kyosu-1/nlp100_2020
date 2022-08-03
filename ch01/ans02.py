@@ -19,5 +19,6 @@ def join_alternately(prev: str, next: str) -> str:
         raise ValueError("文字列の長さが異なります")
     return "".join([i + j for i, j in zip(prev, next)])
 
-print(join_alternately(prev, next))
-# ->  パタトクカシーー
+
+if __name__ == '__main__':
+    print(join_alternately(prev, next))
